@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Portfolio</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="theme-light">
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="header__title">My Portfolio</h1>
+    <button class="header__btn" onclick="toggleTheme()">Switch Theme</button>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <ul class="nav__list">
+      <li><a class="nav__link" href="#about">About</a></li>
+      <li><a class="nav__link" href="#projects">Projects</a></li>
+      <li><a class="nav__link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="portfolio-grid">
+
+    <!-- About Section -->
+    <section id="about" class="card card--about">
+      <h2 class="card__title">About Me</h2>
+      <p class="card__text">
+        I am a Computer Engineering student passionate about web development and modern UI design.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="card card--projects">
+      <h2 class="card__title">Projects</h2>
+
+      <div class="projects">
+        <div class="project-card">Project 1</div>
+        <div class="project-card">Project 2</div>
+        <div class="project-card">Project 3</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card card--contact">
+      <h2 class="card__title">Contact</h2>
+      <p class="card__text">Email: example@email.com</p>
+    </section>
+
+  </main>
+
+  <script src="js/theme-switcher.js"></script>
+</body>
+</html>
